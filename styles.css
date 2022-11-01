@@ -21,12 +21,131 @@
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 13px;
+    color: var(--desaturated-dark-blue);
 }
 
+h1 {
+    color: var(--very-dark-grayish-blue);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.user-name {
+    font-weight: 700;
+    color: var(--very-dark-grayish-blue);
+}
+
+div.social-media-share p {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 /* LAYOUT */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--light-grayish-blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-image {
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.content {
+    padding: 2em;
+}
+
+.user-profile {
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user-image {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-name-birth {
+    margin-left: 1em;
+}
+
+.user-name {
+    margin-bottom: 0.2em;
+}
+
+.share {
+    margin-left: auto;
+}
+
+
+.description {
+    margin-top: 1em;
+}
+
+button.share {
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--light-grayish-blue);
+    position: relative;
+}
+
+div.social-media-share {
+    background-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    height: 65px;
+    display: none;
+}
+
+div.social-media-share a {
+    display: block;
+    margin-left: 1em;
+}
+
+footer {
+    margin-top: auto;
+}
 
 /* MEDIA QUERIES */
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*
+
+
+button.share {
+    cursor: pointer;
+}
+
+*/
+
