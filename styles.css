@@ -72,11 +72,12 @@ main {
 }
 
 .content {
-    padding: 2em;
+    padding: 2.5em;
+    padding-bottom: 1.2em;
 }
 
 .user-profile {
-    margin-top: 2em;
+    margin-top: 2.5em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -95,22 +96,18 @@ main {
     margin-bottom: 0.2em;
 }
 
-.share {
-    margin-left: auto;
-}
-
-
 .description {
     margin-top: 1em;
 }
 
-button.share {
+.share-button {
+    margin-left: auto;
     border: none;
-    height: 40px;
-    width: 40px;
+    padding: 0.6em;
     border-radius: 50%;
     background-color: var(--light-grayish-blue);
     position: relative;
+    z-index: 1;
 }
 
 div.social-media-share {
@@ -122,14 +119,32 @@ div.social-media-share {
     display: flex;
     align-items: center;
     padding-left: 2em;
-    height: 65px;
-    display: none; /*************************************/
+    height: 70px;
+    transform: translateY(100%);
     transition: all 0.5s ease-in-out;
+}
+
+.share-button-image {
+    -webkit-mask: url(./images/icon-share.svg) no-repeat center;
+    background-color: rebeccapurple;
+    width: 20px;
+    height: 20px;
 }
 
 div.social-media-share a {
     display: block;
-    margin-left: 1em;
+    margin-left: 1.2em;
+}
+
+div.social-media-share p {
+    margin-bottom: 0.3em;
+}
+
+.animation {
+    transition: all 0.5s ease-in-out !important; 
+    transform: translateY(0%) !important;
+    /* background-color: red !important;
+    opacity: 0.5; */
 }
 
 footer {
@@ -144,7 +159,7 @@ footer {
 /*
 
 
-button.share {
+button.share-button {
     cursor: pointer;
 }
 
