@@ -1,13 +1,18 @@
 
-const shareButton = document.querySelector('.share-button-image');
+const shareButton = document.querySelector('.share-button');
+const shareButtonIcon = document.querySelector('.share-button-icon');
 const socialMediaShare = document.querySelector('.social-media-share');
 
 shareButton.addEventListener('mouseover', () => {
         socialMediaShare.classList.add("animation");
-        shareButton.style.backgroundColor = "hsl(212, 23%, 69%)";
+        shareButton.classList.add('share-button-active');
+        shareButtonIcon.classList.add('share-button-icon-active');
+        
 });
 
-shareButton.addEventListener('mouseout', () => {
+socialMediaShare.addEventListener('mouseout', () => {
     socialMediaShare.classList.remove("animation");
-    shareButton.style.backgroundColor = "hsl(210, 46%, 95%)";
+    shareButton.classList.remove('share-button-active');
+    shareButtonIcon.classList.remove('share-button-icon-active');
+
 });
