@@ -39,6 +39,10 @@ h1 {
     font-weight: 700;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 .user-name {
     font-weight: 700;
     color: var(--very-dark-grayish-blue);
@@ -174,7 +178,39 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 800px) {
+    body {
+    }
 
+    main {
+        flex-direction: row;
+        width: 730px; /* INTENTAR PASAR A PORCENTAJES */
+        height: 280px; /* INTENTAR PASAR A PORCENTAJES */
+    }
+
+    .main-image {
+        height: 100%;
+        width: 280px; /* INTENTAR PASAR A PORCENTAJES */
+        object-position: left;
+    }
+
+    .content {
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+    }
+
+    h1 {
+        line-height: 1.5em;
+        letter-spacing: 0.03em;
+        font-size: 1.2rem;
+    }
+
+    .user-profile {
+        margin-top: 1.5em;
+    }
+
+
+}
 
 
 /*
