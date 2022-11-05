@@ -195,6 +195,7 @@ footer {
     }
 
     .content {
+        position: relative;
         padding-left: 3.5em;
         padding-right: 3.5em;
     }
@@ -206,7 +207,59 @@ footer {
     }
 
     .user-profile {
-        margin-top: 1.5em;
+        margin-top: 2em;
+    }
+
+    div.social-media-share {
+        /* display: none;  Eliminar ??? */
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        bottom: 46%;
+        left: 62.5%;
+        width: 250px;
+        height: 55px;
+        z-index: 1;
+        border-radius: 10px;
+        justify-content: center;
+        transform: translateY(0%);
+        transition: all var(--transition-duration) ease-in-out !important; 
+    }
+
+    /*
+            background-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    height: 70px;
+    
+    transition: all var(--transition-duration) ease-in-out;
+    */
+
+    div.share-button {
+        cursor: pointer;
+    }
+
+    div.social-media-share::after{
+        content: '';
+        width: 0;
+        height: 0;
+        transform: translate(-265%, 180%);
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid var(--very-dark-grayish-blue);
+    }
+
+    .animation {
+        transition: display 0s ease-in-out, opacity var(--transition-duration) ease-in-out !important;
+        /* display: flex !important; */
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: translateY(0%) !important;
     }
 
 
@@ -216,9 +269,7 @@ footer {
 /*
 
 
-button.share-button {
-    cursor: pointer;
-}
+
 
 */
 
