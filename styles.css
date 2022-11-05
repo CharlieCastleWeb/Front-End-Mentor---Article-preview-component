@@ -188,7 +188,7 @@ footer {
 
     .main-image {
         height: 270px;
-        width: 38%;
+        min-width: 38%;
         object-position: left;
     }
 
