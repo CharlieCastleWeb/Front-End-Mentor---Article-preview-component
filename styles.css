@@ -25,6 +25,14 @@ body {
     color: var(--desaturated-dark-blue);
 }
 
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
 h1 {
     color: var(--very-dark-grayish-blue);
     font-size: 1.1rem;
@@ -118,6 +126,7 @@ main {
 
 .share-button-icon {
     -webkit-mask: url(./images/icon-share.svg) no-repeat center;
+    mask: url(./images/icon-share.svg) no-repeat center;
     background-color: var(--desaturated-dark-blue);
     width: 20px;
     height: 20px;
@@ -127,6 +136,7 @@ main {
 
 .share-button-icon-active {
     background-color: white;
+    transform: rotate(360deg);
 }
 
 div.social-media-share {
@@ -155,12 +165,11 @@ div.social-media-share p {
 .animation {
     transition: all 0.5s ease-in-out !important; 
     transform: translateY(0%) !important;
-    /* background-color: red !important;
-    opacity: 0.5; */
 }
 
 footer {
     margin-top: auto;
+    margin-bottom: 1em;
 }
 
 /* MEDIA QUERIES */

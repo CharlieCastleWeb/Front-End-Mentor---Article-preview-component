@@ -1,18 +1,15 @@
 
-const shareButton = document.querySelector('.share-button');
-const shareButtonIcon = document.querySelector('.share-button-icon');
-const socialMediaShare = document.querySelector('.social-media-share');
+window.onload = function() {
+    
+    document.body.classList.remove("preload");
 
-shareButton.addEventListener('mouseover', () => {
-        socialMediaShare.classList.add("animation");
-        shareButton.classList.add('share-button-active');
-        shareButtonIcon.classList.add('share-button-icon-active');
-        
-});
-
-socialMediaShare.addEventListener('mouseout', () => {
-    socialMediaShare.classList.remove("animation");
-    shareButton.classList.remove('share-button-active');
-    shareButtonIcon.classList.remove('share-button-icon-active');
-
-});
+    const shareButton = document.querySelector('.share-button');
+    const shareButtonIcon = document.querySelector('.share-button-icon');
+    const socialMediaShare = document.querySelector('.social-media-share');
+    
+    shareButton.addEventListener('click', () => {
+        socialMediaShare.classList.toggle("animation");
+        shareButton.classList.toggle('share-button-active');
+        shareButtonIcon.classList.toggle('share-button-icon-active');
+    });
+}
